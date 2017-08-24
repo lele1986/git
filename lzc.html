@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动画展示</title>
+		<style type="text/css">
+			.box{ 
+			  width: 100px; 
+			  height: 100px; 
+			  background-color: green; 
+			  position: absolute; 
+			  margin-top: 10px; 
+			}
+		</style>
+	</head>
+	<body>
+		<h2>动画展示</h2>
+		<div id="box1" class="box"></div> 
+  	</body>
+
+		<script type="text/javascript">
+						
+			function divMove(){
+				var div = document.getElementById("box1");
+				
+			    console.log("before:"+div.style.left);
+
+			    div.style.left = div.style.left + 10;
+
+			    console.log("after:"+div.style.left);
+			}
+			setInterval("divMove()",1000);
+
+			
+		</script>
+</html>
